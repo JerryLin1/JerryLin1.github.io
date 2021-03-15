@@ -42,7 +42,6 @@ function App() {
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  console.log(images);
   return images;
 }
 
@@ -66,7 +65,6 @@ function GenerateProjects() {
       <div className="experiences">
         <div className="exp-title">{projs.title}</div>
         <div className="exp-years">{projs.years}</div>
-        {console.log(images[projs.image])}
         <img src={images[projs.image]}/>
         <div className="after-float" />
         <div className="exp-description">{projs.desc}</div>

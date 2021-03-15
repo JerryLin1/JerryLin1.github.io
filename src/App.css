@@ -37,6 +37,7 @@ ul {
 }
 .section#sa {
   width: 500px;
+  max-width: 80%;
   position: relative;
 }
 #name {

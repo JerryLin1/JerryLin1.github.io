@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4508517e.chunk.css",
+    "main.css": "/static/css/main.324aea35.chunk.css",
     "main.js": "/static/js/main.d3d88da7.chunk.js",
     "main.js.map": "/static/js/main.d3d88da7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88416d16.js",
@@ -8,14 +8,14 @@
     "static/js/2.2c585a2d.chunk.js": "/static/js/2.2c585a2d.chunk.js",
     "static/js/2.2c585a2d.chunk.js.map": "/static/js/2.2c585a2d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4508517e.chunk.css.map": "/static/css/main.4508517e.chunk.css.map",
+    "static/css/main.324aea35.chunk.css.map": "/static/css/main.324aea35.chunk.css.map",
     "static/js/2.2c585a2d.chunk.js.LICENSE.txt": "/static/js/2.2c585a2d.chunk.js.LICENSE.txt",
     "static/media/skelascent.png": "/static/media/skelascent.db115ade.png"
   },
   "entrypoints": [
     "static/js/runtime-main.88416d16.js",
     "static/js/2.2c585a2d.chunk.js",
-    "static/css/main.4508517e.chunk.css",
+    "static/css/main.324aea35.chunk.css",
     "static/js/main.d3d88da7.chunk.js"
   ]
 }

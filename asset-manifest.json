@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/websitereact/static/css/main.70fc6433.chunk.css",
-    "main.js": "/websitereact/static/js/main.9f4e03fa.chunk.js",
-    "main.js.map": "/websitereact/static/js/main.9f4e03fa.chunk.js.map",
-    "runtime-main.js": "/websitereact/static/js/runtime-main.9391db9c.js",
-    "runtime-main.js.map": "/websitereact/static/js/runtime-main.9391db9c.js.map",
-    "static/js/2.2c585a2d.chunk.js": "/websitereact/static/js/2.2c585a2d.chunk.js",
-    "static/js/2.2c585a2d.chunk.js.map": "/websitereact/static/js/2.2c585a2d.chunk.js.map",
-    "index.html": "/websitereact/index.html",
-    "static/css/main.70fc6433.chunk.css.map": "/websitereact/static/css/main.70fc6433.chunk.css.map",
-    "static/js/2.2c585a2d.chunk.js.LICENSE.txt": "/websitereact/static/js/2.2c585a2d.chunk.js.LICENSE.txt",
-    "static/media/skelascent.png": "/websitereact/static/media/skelascent.db115ade.png"
+    "main.css": "/static/css/main.70fc6433.chunk.css",
+    "main.js": "/static/js/main.9f4e03fa.chunk.js",
+    "main.js.map": "/static/js/main.9f4e03fa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.88416d16.js",
+    "runtime-main.js.map": "/static/js/runtime-main.88416d16.js.map",
+    "static/js/2.2c585a2d.chunk.js": "/static/js/2.2c585a2d.chunk.js",
+    "static/js/2.2c585a2d.chunk.js.map": "/static/js/2.2c585a2d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.70fc6433.chunk.css.map": "/static/css/main.70fc6433.chunk.css.map",
+    "static/js/2.2c585a2d.chunk.js.LICENSE.txt": "/static/js/2.2c585a2d.chunk.js.LICENSE.txt",
+    "static/media/skelascent.png": "/static/media/skelascent.db115ade.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9391db9c.js",
+    "static/js/runtime-main.88416d16.js",
     "static/js/2.2c585a2d.chunk.js",
     "static/css/main.70fc6433.chunk.css",
     "static/js/main.9f4e03fa.chunk.js"

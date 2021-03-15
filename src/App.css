@@ -9,6 +9,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
+  /* width is weird?? there is horz scroll bars */
+  overflow-x: hidden;
   font-size: 18px;
 }
 ul {
@@ -20,7 +22,8 @@ ul {
 .bigsection {
   padding: 2rem;
 
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 100%;
 }
 #ba {

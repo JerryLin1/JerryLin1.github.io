@@ -1,9 +1,17 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .bigsection {
     padding: 1rem;
   }
-  .section{
-
+  #sa {
+    margin: auto;
+    margin-top: 5rem;
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+  }
+  .exp-title {
+    font-size: 1.5rem;
+    width: 70%;
   }
   .proj-desc-container {
     display: block;
@@ -20,5 +28,14 @@
     border: 4px solid;
     width: 100%;
     max-width: 100%;
+  }
+  .proj-icons {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    right: auto;
+    bottom: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }

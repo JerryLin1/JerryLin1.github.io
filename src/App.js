@@ -1,4 +1,5 @@
 import "./App.css";
+import "./responsive.css";
 import { experiences } from "./experience.js";
 import { projects } from "./projects.js";
 

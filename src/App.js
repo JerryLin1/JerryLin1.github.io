@@ -6,20 +6,21 @@ import { projects } from "./projects.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faDev, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faCircle, faCoffee } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
   return (
     <div>
       <div className="wrapper">
+        
         <div className="bigsection" id="ba">
           <div className="section" id="sa">
             <h1 id="name">JERRY LIN</h1>
             {/* <span id="selfie"></span> */}
             <div className="blurb">
-              Hi, I'm a Grade 12 high school student in London, Ontario
-              interested in a future in software engineering.
+              I'm a Grade 12 high school student in London, Ontario
+              interested in a future career in software engineering.
               <br />
               <br />
               Here are some of the things that I've been doing over the past few
@@ -40,6 +41,16 @@ function App() {
               These are some of the personal projects that I've worked on in my free time.
             </div>
             {GenerateProjects()}
+          </div>
+        </div>
+        <div className="bigsection" id="bd">
+          <div className="section" id="sd">
+            <h2 id="contact">Contact</h2>
+            <div className="contact-links-container">
+              <a href="jerrylin9969@gmail.com" className="contact-link">jerrylin9969@gmail.com</a>
+              <FontAwesomeIcon className="link-circle" icon={faCircle}/>
+              <a href="https://github.com/JerryLin1" className="contact-link">Github</a>
+            </div>
           </div>
         </div>
       </div>

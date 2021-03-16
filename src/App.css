@@ -12,8 +12,12 @@ body {
   /* width is weird?? there is horz scroll bars */
   font-size: 18px;
 }
-ul {
-  list-style-position: inside;
+a {
+  text-decoration: none;
+  color: #a0acf0;
+}
+.bar {
+  position: fixed;
 }
 .wrapper {
   display: grid;
@@ -80,7 +84,7 @@ ul {
   clear: both;
   height: 0;
   width: 100%;
-  content: '';
+  content: "";
   display: block;
 }
 .exp-description {
@@ -114,6 +118,30 @@ ul {
 .proj-icon {
   font-size: 3rem;
   margin: 1rem;
+}
+#contact {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#sd {
+  border: none;
+}
+#bd {
+  padding-top: 0;
+}
+.link-circle {
+  color: #a0acf0;
+}
+.contact-links-container {
+  display: flex;
+  padding-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact-link {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 /* #selfie {
   position: absolute;

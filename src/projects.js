@@ -34,7 +34,7 @@ export const projects =
       
       Made in Unity using C#.`,
       "github":"https://github.com/p-han-tom/NorthernHackers",
-      "itchio":"https://devpost.com/software/northernhackers"
+      "devpost":"https://devpost.com/software/northernhackers"
     },
     {
       "title": `This portfolio`,

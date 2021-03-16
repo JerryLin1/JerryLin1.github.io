@@ -4,7 +4,7 @@ import { projects } from "./projects.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
+import { fab, faDev, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, faCheckSquare, faCoffee)
 
@@ -81,6 +81,9 @@ function GenerateProjectLinks(projs) {
   }
   if (projs.itchio !== undefined) {
     arr.push(<a key="itchio" href={projs.itchio} className="proj-icon"><FontAwesomeIcon icon={faItchIo} inverse/></a>);
+  }
+  if (projs.devpost !== undefined) {
+    arr.push(<a key="devpost" href={projs.devpost} className="proj-icon"><FontAwesomeIcon icon={faDev} inverse/></a>);
   }
   return (
     <div key="proj-icons" className="proj-icons">

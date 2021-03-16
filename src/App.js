@@ -2,6 +2,12 @@ import "./App.css";
 import { experiences } from "./experience.js";
 import { projects } from "./projects.js";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faCheckSquare, faCoffee)
+
 function App() {
   return (
     <div>
@@ -30,7 +36,7 @@ function App() {
           <div className="section" id="sc">
             <h2>Projects</h2>
             <div className="blurb">
-              These are some of the things that I've made in my free time.
+              These are some of the personal projects that I've worked on in my free time.
             </div>
             {GenerateProjects()}
           </div>
@@ -39,22 +45,15 @@ function App() {
     </div>
   );
 }
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
 
 function GenerateExperiences() {
   return experiences.map((exps, index) => {
     return (
-      <div className="experiences">
-        <div className="exp-title">{exps.title}</div>
-        <div className="exp-years">{exps.years}</div>
-        <div className="after-float" />
-        <div className="exp-description">{exps.desc}</div>
+      <div key={"experience-"+index} className="experiences">
+        <div key={exps.title} className="exp-title">{exps.title}</div>
+        <div key={exps.years} className="exp-years">{exps.years}</div>
+        <div key="after-float" className="after-float" />
+        <div key={exps.desc} className="exp-description">{exps.desc}</div>
       </div>
     );
   });
@@ -62,16 +61,32 @@ function GenerateExperiences() {
 function GenerateProjects() {
   return projects.map((projs, index) => {
     return (
-      <div className="experiences">
-        <div className="exp-title">{projs.title}</div>
-        <div className="exp-years">{projs.years}</div>
-        <img src={images[projs.image]}/>
-        <div className="after-float" />
-        <div className="exp-description">{projs.desc}</div>
+      <div key={"project"+index} className="experiences">
+        <div key={projs.title} className="exp-title">{projs.title}</div>
+        <div key={projs.years} className="exp-years">{projs.years}</div>
+        <div key="after-float" className="after-float" />
+        <div key="proj-desc-container" className="proj-desc-container">
+          <img key={projs.image} className="proj-img" src={require("./images/"+projs.image).default}/>
+          <div key={projs.desc} className="proj-description">{projs.desc}</div>
+        </div>
+        {GenerateProjectLinks(projs)}
       </div>
     );
   });
 }
-
+function GenerateProjectLinks(projs) {
+  var arr = [];
+  if (projs.github !== undefined) {
+    arr.push(<a key="github" href={projs.github} className="proj-icon"><FontAwesomeIcon icon={faGithub} inverse/></a>);
+  }
+  if (projs.itchio !== undefined) {
+    arr.push(<a key="itchio" href={projs.itchio} className="proj-icon"><FontAwesomeIcon icon={faItchIo} inverse/></a>);
+  }
+  return (
+    <div key="proj-icons" className="proj-icons">
+      {arr}
+    </div>
+  );
+}
 
 export default App;

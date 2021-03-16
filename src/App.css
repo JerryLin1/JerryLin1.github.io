@@ -67,16 +67,17 @@ ul {
 .exp-title {
   display: block;
   font-size: 2rem;
-  float: left;
   max-width: 85%;
   word-break: keep-all;
 }
 .exp-years {
   display: block;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
   color: #a5a5a5;
   font-size: 1.5rem;
   font-style: italic;
-  float: right;
 }
 .after-float::after {
   clear: both;

@@ -18,7 +18,7 @@ export const projects =
       "image": "bttp.png",
       "desc": `Play through 15 puzzling levels with your rewinding abilities... you can rewind yourself to a previous position, or use your rewind gun to blast enemies to the past.
       
-      This game was made in 7 days (although we had to start on the 3rd day, so really it was 5 days) for the Brackeys 2020.2 Jam. Because we had so much more time compared to Skelascent, we decided to focus more on the design aspect. We spent more time on trying to make the game feel more satisfying, and on making more creative puzzles.
+      This game was made in 5 days for the Brackeys 2020.2 Jam. With this project, I tried to focus more on the design aspect. I spent more time on trying to make the game feel more satisfying, and on making more creative puzzles. Blast to the Past placed in the top 10% overall out of around 1.8k entries.
       
       Made in Unity using C#.`,
       "github":"https://github.com/p-han-tom/BrackeysGameJam4",
@@ -40,7 +40,7 @@ export const projects =
       "title": `This portfolio`,
       "years": `2021`,
       "image": "website.png",
-      "desc": `This page here! I made this website to show off some of the things that I have been doing. It is made using React.js and CSS. The content of the website is loaded in as JSON files, and automatically generated. This lets me easily maintain it and add new things.`,
+      "desc": `This page here! I made this website to show off some of the things that I have been doing. It is made using ReactJS and CSS. The content of the website is loaded in as JSON files, and automatically generated. This lets me easily maintain it and add new things.`,
       "github":"https://github.com/JerryLin1/JerryLin1.github.io"
     }
   ];

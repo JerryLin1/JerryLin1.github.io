@@ -18,7 +18,7 @@ export const projects =
       "image": "bttp.png",
       "desc": `Play through 15 puzzling levels with your rewinding abilities... you can rewind yourself to a previous position, or use your rewind gun to blast enemies to the past.
       
-      This game was made in 7 days (although we had to start on the 3rd day, so really it was 5 days) for the Brackeys 2020.2 Jam. Because we had so much more time compared to Skelascent, we decided to focus more on the design aspect. We spent more time on trying to make the game feeling more satisfying and visually appealing, and on making puzzles with creative solutions.
+      This game was made in 7 days (although we had to start on the 3rd day, so really it was 5 days) for the Brackeys 2020.2 Jam. Because we had so much more time compared to Skelascent, we decided to focus more on the design aspect. We spent more time on trying to make the game feel more satisfying, and on making more creative puzzles.
       
       Made in Unity using C#.`,
       "github":"https://github.com/p-han-tom/BrackeysGameJam4",
@@ -30,7 +30,7 @@ export const projects =
       "image": "northernHackers.png",
       "desc": `You and your friends will play as lumberjacks as you chop down trees, while avoiding giant angry beavers. Whoever gets the most wood at the end of each round gets a point!
       
-      This game was made in 36 hours days for Hack the North 2021. This was my first dive into multiplayer, which was initially very difficult to grasp as there were many networking concepts that I had never come across before. 
+      This game was made in 36 hours days for Hack the North 2021, and was my first attempt at multiplayer. My teammate and I had never done anything with networking before, so even basic concepts like servers and ports gave us a hard time. Because of our short time limit, this game is full of bugs (But at least you can experience it with friends). 
       
       Made in Unity using C#.`,
       "github":"https://github.com/p-han-tom/NorthernHackers",

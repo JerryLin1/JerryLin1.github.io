@@ -15,7 +15,7 @@ export const experiences =
     {
       "title": `Hobbyist Game Development`,
       "years": "2020-2021",
-      "desc": `I picked up game development as a hobby during 2020 quarantine. I have dabbled with various frameworks and engines like LibGDX (Java) and PixiJS (JavaScript), but I settled on Unity (C#). I wasn't familiar with C# initially, but I quickly picked it up because of its similarities to Java.`
+      "desc": `I picked up game development as a hobby during 2020 quarantine. I have dabbled with various frameworks and engines like LibGDX, which uses Java, and PixiJS, which uses Javascript, but I eventually settled on Unity, which uses C#. I wasn't familiar with C# initially, but I quickly picked it up because of its similarities to Java.`
     },
     {
       "title": `Hopefully more!`,

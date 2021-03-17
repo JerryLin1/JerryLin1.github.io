@@ -1,19 +1,12 @@
 export const projects =
   [
     {
-      "title": `This portfolio`,
-      "years": `2021`,
-      "image": "website.png",
-      "desc": `This page here! I made this website to show off some of the things that I have been doing. It is made using ReactJS and CSS. The content of the website is loaded in as JSON files, and automatically generated. This lets me easily maintain it and add new things.`,
-      "github": "https://github.com/JerryLin1/JerryLin1.github.io"
-    },
-    {
       "title": `Northern Hackers`,
       "years": `2021`,
       "image": "northernHackers.png",
       "desc": `You and your friends will play as lumberjacks as you chop down trees, while avoiding giant angry beavers. Whoever gets the most wood at the end of each round gets a point!
       
-      This game was made in 36 hours days for Hack the North 2021, and was my first attempt at multiplayer. My teammate and I had never done anything with networking before, so even basic concepts like servers and ports gave us a hard time. Because of our short time limit, this game is full of bugs (But at least you can experience it with friends). 
+      This game was made in 36 hours days for Hack the North 2021, and was my first attempt at multiplayer. My teammate and I had never done anything with networking before, so we had a hard time understanding many of the basic concepts. Because of the short time limit for this hackathon, this game is full of bugs (But at least you can experience it with friends). 
       
       Made in Unity using C#.`,
       "github": "https://github.com/p-han-tom/NorthernHackers",
@@ -42,6 +35,13 @@ export const projects =
       Made in Unity using C#.`,
       "github": "https://github.com/JerryLin1/ScoreSpaceJam9",
       "itchio": "https://bootleben.itch.io/skelascent"
+    },
+    {
+      "title": `This portfolio`,
+      "years": `2021`,
+      "image": "website.png",
+      "desc": `This page here! I made this website to show off some of the things that I have been doing. It is made using ReactJS and CSS. The content of the website is loaded in as JSON files, and automatically generated. This lets me easily maintain it and add new things.`,
+      "github": "https://github.com/JerryLin1/JerryLin1.github.io"
     }
   ];
 

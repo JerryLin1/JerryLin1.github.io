@@ -27,7 +27,7 @@ function App() {
           <div className="section" id="sa">
             <h1 id="name">Jerry Lin</h1>
             <div className="blurb">
-              I'm a Grade 12 high school student in London, Ontario
+              I'm a Grade 12 high school student in London, Ontario who is 
               interested in a future career in software engineering.
               <br />
               <br />
@@ -57,7 +57,7 @@ function App() {
             <div className="contact-links-container">
               <a href="mailto:jerrylin9969@gmail.com" className="contact-link">jerrylin9969@gmail.com</a>
               <FontAwesomeIcon className="link-circle" icon={faCircle}/>
-              <a href="https://github.com/JerryLin1" className="contact-link">Github</a>
+              <a href="https://github.com/JerryLin1" className="contact-link" target="_blank">Github</a>
             </div>
           </div>
         </div>
@@ -97,13 +97,13 @@ function GenerateProjects() {
 function GenerateProjectLinks(projs) {
   var arr = [];
   if (projs.github !== undefined) {
-    arr.push(<a key="github" href={projs.github} className="proj-icon"><FontAwesomeIcon icon={faGithub} inverse/></a>);
+    arr.push(<a key="github" href={projs.github} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faGithub} inverse/></a>);
   }
   if (projs.itchio !== undefined) {
-    arr.push(<a key="itchio" href={projs.itchio} className="proj-icon"><FontAwesomeIcon icon={faItchIo} inverse/></a>);
+    arr.push(<a key="itchio" href={projs.itchio} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faItchIo} inverse/></a>);
   }
   if (projs.devpost !== undefined) {
-    arr.push(<a key="devpost" href={projs.devpost} className="proj-icon"><FontAwesomeIcon icon={faDev} inverse/></a>);
+    arr.push(<a key="devpost" href={projs.devpost} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faDev} inverse/></a>);
   }
   return (
     <div key="proj-icons" className="proj-icons">

@@ -39,6 +39,7 @@
     transform: translateX(-50%);
     margin-top: 2rem;
   }
+  /* Particle dimensions are incorrect on mobile for some reason. For now, just don't display them on mobile. */
   .particles {
       display: none;
   }

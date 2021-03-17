@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #0b090a;
   color: #ffffff;
@@ -12,12 +15,25 @@ body {
   /* width is weird?? there is horz scroll bars */
   font-size: 18px;
 }
-a {
+a,.fa-inverse {
   text-decoration: none;
   color: #a0acf0;
+  transition-duration: 0.2s;
+}
+a:hover,.fa-inverse:hover {
+  color: #ffffff;
 }
 .bar {
+  z-index: 1;
+  display: flex;
+  width: 100%;
   position: fixed;
+  padding: 1rem;
+  background-color: #1b191a;
+}
+.bar-btn {
+  margin: 1rem;
+  color: #a0a0a0;
 }
 .wrapper {
   display: grid;

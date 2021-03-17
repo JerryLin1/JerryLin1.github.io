@@ -13,7 +13,13 @@ function App() {
   return (
     <div>
       <div className="wrapper">
-        
+        <div className="bar">
+          <div className="bar-btns-container">
+            <a href="#experience" className="bar-btn">Experience</a>
+            <a href="#projects" className="bar-btn">Projects</a>
+            <a href="#contact" className="bar-btn">Contact</a>
+          </div>
+        </div>
         <div className="bigsection" id="ba">
           <div className="section" id="sa">
             <h1 id="name">JERRY LIN</h1>
@@ -28,13 +34,13 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="bigsection" id="bb">
+        <div className="bigsection" id="bb" id="experience">
           <div className="section" id="sb">
             <h2>Experience</h2>
             {GenerateExperiences()}
           </div>
         </div>
-        <div className="bigsection" id="bc">
+        <div className="bigsection" id="bc" id="projects">
           <div className="section" id="sc">
             <h2>Projects</h2>
             <div className="blurb">
@@ -47,7 +53,7 @@ function App() {
           <div className="section" id="sd">
             <h2 id="contact">Contact</h2>
             <div className="contact-links-container">
-              <a href="jerrylin9969@gmail.com" className="contact-link">jerrylin9969@gmail.com</a>
+              <a href="mailto:jerrylin9969@gmail.com" className="contact-link">jerrylin9969@gmail.com</a>
               <FontAwesomeIcon className="link-circle" icon={faCircle}/>
               <a href="https://github.com/JerryLin1" className="contact-link">Github</a>
             </div>

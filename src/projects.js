@@ -32,6 +32,8 @@ export const projects =
       
       This was the first finished game I worked on. It was made in 72 hours for the ScoreSpace #9 Jam. Out of around 120 entries, Skelascent placed 4th overall and 1st place in aesthetics! This project taught me a lot about the general workflow, and how important time management, communication, and teamwork was.
 
+      I am currently developing a port of this game to mobile devices.
+
       Made in Unity using C#.`,
       "github": "https://github.com/JerryLin1/ScoreSpaceJam9",
       "itchio": "https://bootleben.itch.io/skelascent"

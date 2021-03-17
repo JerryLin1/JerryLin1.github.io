@@ -2,11 +2,13 @@ import "./App.css";
 import "./responsive.css";
 import { experiences } from "./experience.js";
 import { projects } from "./projects.js";
+import {params} from "./particlesParam";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faDev, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faCircle, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import Particles from "react-particles-js";
 library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
@@ -21,9 +23,9 @@ function App() {
           </div>
         </div>
         <div className="bigsection" id="ba">
+        {ParticleBg()}
           <div className="section" id="sa">
-            <h1 id="name">JERRY LIN</h1>
-            {/* <span id="selfie"></span> */}
+            <h1 id="name">Jerry Lin</h1>
             <div className="blurb">
               I'm a Grade 12 high school student in London, Ontario
               interested in a future career in software engineering.
@@ -108,6 +110,10 @@ function GenerateProjectLinks(projs) {
       {arr}
     </div>
   );
+}
+
+function ParticleBg() {
+  return (<Particles className="particles" params={params} />)
 }
 
 export default App;

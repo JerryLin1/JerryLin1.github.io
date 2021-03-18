@@ -175,18 +175,3 @@ h2 {
   top: 0;
   left: 0;
 }
-/* #selfie {
-  position: absolute;
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  max-height: 30vh;
-  max-width: 30vh;
-  top: 5%;
-  right: 5%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-  background-image: url("https://i.imgur.com/QSOT21r.jpg");
-} */

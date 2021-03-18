@@ -3,6 +3,9 @@ import "./responsive.css";
 import { experiences } from "./experience.js";
 import { projects } from "./projects.js";
 import {params} from "./particlesParam";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -12,6 +15,12 @@ import Particles from "react-particles-js";
 library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
+  useEffect(()=> {
+    Aos.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
   return (
     <div>
       <div className="wrapper">
@@ -69,7 +78,7 @@ function App() {
 function GenerateExperiences() {
   return experiences.map((exps, index) => {
     return (
-      <div key={"experience-"+index} className="experiences">
+      <div key={"experience-"+index} className="experiences" data-aos="fade-up">
         <div key={exps.title} className="exp-title">{exps.title}</div>
         <div key={exps.years} className="exp-years">{exps.years}</div>
         <div key="after-float" className="after-float" />
@@ -81,7 +90,7 @@ function GenerateExperiences() {
 function GenerateProjects() {
   return projects.map((projs, index) => {
     return (
-      <div key={"project"+index} className="experiences">
+      <div key={"project"+index} className="experiences" data-aos="fade-up">
         <div key={projs.title} className="exp-title">{projs.title}</div>
         <div key={projs.years} className="exp-years">{projs.years}</div>
         <div key="after-float" className="after-float" />

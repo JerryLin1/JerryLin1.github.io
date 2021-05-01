@@ -2,6 +2,9 @@
   .bigsection {
     padding: 1rem;
   }
+  #ba {
+    background-attachment: scroll;
+  }
   #sa {
     margin: auto;
     margin-top: 5rem;

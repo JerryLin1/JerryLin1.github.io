@@ -1,6 +1,20 @@
 export const projects =
   [
     {
+      "title": "Maze generator",
+      "years": "2021",
+      "image": "generator.png",
+      "desc": `A collection of various maze generation algorithms, as well as miscellaneous things`,
+      "github": "https://jerrylin1.github.io/CanvasGenerations",
+    },
+    {
+      "title": `This portfolio`,
+      "years": `2021`,
+      "image": "website.png",
+      "desc": `This page here! I made this website to show off some of the things that I have been doing. It is made using ReactJS and CSS. The content of the website is loaded in as JSON files, and automatically generated. This lets me easily maintain it and add new things.`,
+      "github": "https://github.com/JerryLin1/JerryLin1.github.io"
+    },
+    {
       "title": `Northern Hackers`,
       "years": `2021`,
       "image": "northernHackers.png",
@@ -37,13 +51,6 @@ export const projects =
       Made in Unity using C#.`,
       "github": "https://github.com/JerryLin1/ScoreSpaceJam9",
       "itchio": "https://bootleben.itch.io/skelascent"
-    },
-    {
-      "title": `This portfolio`,
-      "years": `2021`,
-      "image": "website.png",
-      "desc": `This page here! I made this website to show off some of the things that I have been doing. It is made using ReactJS and CSS. The content of the website is loaded in as JSON files, and automatically generated. This lets me easily maintain it and add new things.`,
-      "github": "https://github.com/JerryLin1/JerryLin1.github.io"
     },
     {
       "title": "WIP Platformer Prototype",

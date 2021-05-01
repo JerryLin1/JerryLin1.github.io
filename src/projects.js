@@ -4,7 +4,9 @@ export const projects =
       "title": "Maze generator",
       "years": "2021",
       "image": "generator.png",
-      "desc": `A collection of various maze generation algorithms, as well as miscellaneous things`,
+      "desc": `A collection of various maze generation algorithms, as well as miscellaneous things. 
+      
+      Made using HTML CSS and Javascript Canvas.`,
       "github": "https://jerrylin1.github.io/CanvasGenerations",
     },
     {

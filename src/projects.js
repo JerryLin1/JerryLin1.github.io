@@ -7,7 +7,8 @@ export const projects =
       "desc": `A collection of various maze generation algorithms, as well as miscellaneous things. Current features include ability to change iteration speed, cell size, time elapsed, and the ability to change the number of rows and columns. Planning to add a maze solver as well using various traversal algorithms.
       
       Made using HTML CSS and Javascript Canvas.`,
-      "github": "https://jerrylin1.github.io/CanvasGenerations",
+      "link": "https://jerrylin1.github.io/CanvasGenerations",
+      "github": "https://github.com/JerryLin1/CanvasGenerations"
     },
     {
       "title": `This portfolio`,

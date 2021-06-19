@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faDev, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCircle, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faCircle, faCoffee, faLink } from '@fortawesome/free-solid-svg-icons';
 import Particles from "react-particles-js";
 library.add(fab, faCheckSquare, faCoffee)
 
@@ -107,6 +107,9 @@ function GenerateProjectLinks(projs) {
   var arr = [];
   if (projs.github !== undefined) {
     arr.push(<a key="github" href={projs.github} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faGithub} inverse/></a>);
+  }
+  if (projs.link !== undefined) {
+    arr.push(<a key="generalLink" href={projs.link} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faLink} inverse/></a>);
   }
   if (projs.itchio !== undefined) {
     arr.push(<a key="itchio" href={projs.itchio} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faItchIo} inverse/></a>);

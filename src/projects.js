@@ -1,6 +1,16 @@
 export const projects =
   [
     {
+      "title": "Public Collaborative Paint App",
+      "years": "2021",
+      "image": "socketiodrawing.png",
+      "desc": `A collaborative drawing application that updates in real time whenever anyone makes a change. It is completely public and unmoderated, so please clear that canvas if you see anything bad. You have been warned!
+      
+      Made using p5.js for the front end, and socket.io and Express.js for the backend.`,
+      "link": "https://socket-io-drawing.herokuapp.com/",
+      "github": "https://github.com/JerryLin1/Socket.ioDrawingTest"
+    },
+    {
       "title": "Maze generator",
       "years": "2021",
       "image": "generator.png",
@@ -35,7 +45,7 @@ export const projects =
       "image": "bttp.png",
       "desc": `Play through 15 puzzling levels with your rewinding abilities... you can rewind yourself to a previous position, or use your rewind gun to blast enemies to the past.
       
-      This game was made in 5 days for the Brackeys 2020.2 Jam. With this project, I tried to focus more on the design aspect. I spent more time on trying to make the game feel more satisfying, and on making more creative puzzles. Blast to the Past placed in the top 10% overall out of around 1.8k entries.
+      This game was made in 5 days for the Brackeys 2020.2 Jam. Blast to the Past placed in the top 10% overall out of around 1.8k entries.
       
       Made in Unity using C#.`,
       "github": "https://github.com/p-han-tom/BrackeysGameJam4",

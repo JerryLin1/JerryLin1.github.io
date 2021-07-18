@@ -4,7 +4,9 @@ export const projects =
       "title": "Public Collaborative Paint App",
       "years": "2021",
       "image": "socketiodrawing.png",
-      "desc": `A collaborative drawing application that updates in real time whenever anyone makes a change. It is completely public and unmoderated, so please clear that canvas if you see anything bad. You have been warned!
+      "desc": `A collaborative drawing application that updates in real time whenever anyone makes a change. I made this so I could try out socket.io.
+      
+      Note that it is completely public and unmoderated, so anyone can draw whatever they want.
       
       Made using p5.js for the front end, and socket.io and Express.js for the backend.`,
       "link": "https://socket-io-drawing.herokuapp.com/",

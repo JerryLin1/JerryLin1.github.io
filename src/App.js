@@ -2,7 +2,7 @@ import "./App.css";
 import "./responsive.css";
 import { experiences } from "./experience.js";
 import { projects } from "./projects.js";
-import {params} from "./particlesParam";
+import { params } from "./particlesParam";
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +15,7 @@ import Particles from "react-particles-js";
 library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
-  useEffect(()=> {
+  useEffect(() => {
     Aos.init({
       duration: 1000,
       once: true
@@ -32,11 +32,11 @@ function App() {
           </div>
         </div>
         <div className="bigsection" id="ba">
-        {ParticleBg()}
+          {ParticleBg()}
           <div className="section" id="sa">
             <h1 id="name">Jerry Lin</h1>
             <div className="blurb">
-              I'm a Grade 12 high school student in London, Ontario who is 
+              I'm a Grade 12 high school student in London, Ontario who is
               interested in a future career in software engineering.
               <br />
               <br />
@@ -65,7 +65,7 @@ function App() {
             <h2 id="contact">Contact</h2>
             <div className="contact-links-container">
               <a href="mailto:jerrylin9969@gmail.com" className="contact-link">jerrylin9969@gmail.com</a>
-              <FontAwesomeIcon className="link-circle" icon={faCircle}/>
+              <FontAwesomeIcon className="link-circle" icon={faCircle} />
               <a href="https://github.com/JerryLin1" className="contact-link" target="_blank">Github</a>
             </div>
           </div>
@@ -77,45 +77,51 @@ function App() {
 
 function GenerateExperiences() {
   return experiences.map((exps, index) => {
-    return (
-      <div key={"experience-"+index} className="experiences" data-aos="fade-up">
-        <div key={exps.title} className="exp-title">{exps.title}</div>
-        <div key={exps.years} className="exp-years">{exps.years}</div>
-        <div key="after-float" className="after-float" />
-        <div key={exps.desc} className="exp-description">{exps.desc}</div>
-      </div>
-    );
+    if (!projs?.hidden) {
+      return (
+        <div key={"experience-" + index} className="experiences" data-aos="fade-up">
+          <div key={exps.title} className="exp-title">{exps.title}</div>
+          <div key={exps.years} className="exp-years">{exps.years}</div>
+          <div key="after-float" className="after-float" />
+          <div key={exps.desc} className="exp-description">{exps.desc}</div>
+        </div>
+      );
+    }
+    else return null;
   });
 }
 function GenerateProjects() {
   return projects.map((projs, index) => {
-    return (
-      <div key={"project"+index} className="experiences" data-aos="fade-up">
-        <div key={projs.title} className="exp-title">{projs.title}</div>
-        <div key={projs.years} className="exp-years">{projs.years}</div>
-        <div key="after-float" className="after-float" />
-        <div key="proj-desc-container" className="proj-desc-container">
-          <img key={projs.image} className="proj-img" src={require("./images/"+projs.image).default}/>
-          <div key={projs.desc} className="proj-description">{projs.desc}</div>
+    if (!projs?.hidden) {
+      return (
+        <div key={"project" + index} className="experiences" data-aos="fade-up">
+          <div key={projs.title} className="exp-title">{projs.title}</div>
+          <div key={projs.years} className="exp-years">{projs.years}</div>
+          <div key="after-float" className="after-float" />
+          <div key="proj-desc-container" className="proj-desc-container">
+            <img key={projs.image} className="proj-img" src={require("./images/" + projs.image).default} />
+            <div key={projs.desc} className="proj-description">{projs.desc}</div>
+          </div>
+          {GenerateProjectLinks(projs)}
         </div>
-        {GenerateProjectLinks(projs)}
-      </div>
-    );
+      );
+    }
+    else return null;
   });
 }
 function GenerateProjectLinks(projs) {
   var arr = [];
   if (projs.github !== undefined) {
-    arr.push(<a key="github" href={projs.github} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faGithub} inverse/></a>);
+    arr.push(<a key="github" href={projs.github} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faGithub} inverse /></a>);
   }
   if (projs.link !== undefined) {
-    arr.push(<a key="generalLink" href={projs.link} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faLink} inverse/></a>);
+    arr.push(<a key="generalLink" href={projs.link} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faLink} inverse /></a>);
   }
   if (projs.itchio !== undefined) {
-    arr.push(<a key="itchio" href={projs.itchio} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faItchIo} inverse/></a>);
+    arr.push(<a key="itchio" href={projs.itchio} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faItchIo} inverse /></a>);
   }
   if (projs.devpost !== undefined) {
-    arr.push(<a key="devpost" href={projs.devpost} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faDev} inverse/></a>);
+    arr.push(<a key="devpost" href={projs.devpost} className="proj-icon" target="_blank"><FontAwesomeIcon icon={faDev} inverse /></a>);
   }
   return (
     <div key="proj-icons" className="proj-icons">

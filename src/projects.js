@@ -10,7 +10,8 @@ export const projects =
       
       Made using p5.js for the front end, and socket.io and Express.js for the backend.`,
       "link": "https://socket-io-drawing.herokuapp.com/",
-      "github": "https://github.com/JerryLin1/Socket.ioDrawingTest"
+      "github": "https://github.com/JerryLin1/Socket.ioDrawingTest",
+      "hidden": true,
     },
     {
       "title": "Maze generator",
@@ -74,7 +75,8 @@ export const projects =
       "desc": `This is quick platformer prototype I made to test out some ideas. You play as a skeleton who can run, jump, slide on walls, and swing around the test arena using a grappling hook.
       
       Made in Unity using C#.`,
-      "itchio": "https://bootleben.itch.io/platformerproto"
+      "itchio": "https://bootleben.itch.io/platformerproto",
+      "hidden": true,
     }
   ];
 

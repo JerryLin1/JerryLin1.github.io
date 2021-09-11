@@ -77,7 +77,7 @@ function App() {
 
 function GenerateExperiences() {
   return experiences.map((exps, index) => {
-    if (!projs?.hidden) {
+    if (!exps?.hidden) {
       return (
         <div key={"experience-" + index} className="experiences" data-aos="fade-up">
           <div key={exps.title} className="exp-title">{exps.title}</div>

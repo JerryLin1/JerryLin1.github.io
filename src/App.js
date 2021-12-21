@@ -36,11 +36,11 @@ function App() {
           <div className="section" id="sa">
             <h1 id="name">Jerry Lin</h1>
             <div className="blurb">
-              I'm a student from London, Ontario currently studying computer science at UoT. 
+              Hi, I'm a student from London, Ontario currently studying computer science at UoT. 
               <br />
               <br />
               Check out some of the things that I've been doing over the past few
-              years.
+              years!
             </div>
           </div>
         </div>

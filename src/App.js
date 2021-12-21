@@ -36,22 +36,21 @@ function App() {
           <div className="section" id="sa">
             <h1 id="name">Jerry Lin</h1>
             <div className="blurb">
-              I'm a Grade 12 high school student in London, Ontario who is
-              interested in a future career in software engineering.
+              I'm a student from London, Ontario currently studying computer science at UoT. 
               <br />
               <br />
-              Here are some of the things that I've been doing over the past few
+              Check out some of the things that I've been doing over the past few
               years.
             </div>
           </div>
         </div>
-        <div className="bigsection" id="bb" id="experience">
+        <div className="bigsection" id="bb experience">
           <div className="section" id="sb">
             <h2>Experience</h2>
             {GenerateExperiences()}
           </div>
         </div>
-        <div className="bigsection" id="bc" id="projects">
+        <div className="bigsection" id="bc projects">
           <div className="section" id="sc">
             <h2>Projects</h2>
             <div className="blurb">

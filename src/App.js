@@ -50,13 +50,13 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <div className="bigsection" id="bb experience">
+                <div className="bigsection" id="experience">
                     <div className="section" id="sb">
                         <h2>Experience</h2>
                         {GenerateExperiences()}
                     </div>
                 </div>
-                <div className="bigsection" id="bc projects">
+                <div className="bigsection" id="projects">
                     <div className="section" id="sc">
                         <h2>Projects</h2>
                         <div className="blurb">
